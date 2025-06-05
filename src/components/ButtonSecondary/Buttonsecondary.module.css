@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.neutral {
+  @apply bg-white text-blue-400 cursor-pointer
+}

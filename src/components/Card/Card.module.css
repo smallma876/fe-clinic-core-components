@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.cardBase{
+  @apply rounded-sm border-1 h-full p-1;
+}
+
+.primary {
+  background-color: #FFF;
+}
+
+.secondary {
+  background-color: #EDF2FA;
+}

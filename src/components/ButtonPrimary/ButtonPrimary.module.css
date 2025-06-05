@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.disabled {
+    @apply bg-slate-400 text-white border-slate-400;
+}
+
+.loading {
+    @apply bg-slate-400 text-white border-slate-400;
+}
+
+.neutral {
+    @apply bg-blue-400 hover:bg-blue-500 text-white border-blue-400 cursor-pointer
+}
+
+.clicked {
+    @apply rounded-sm border-1 max-w-60 h-9 min-w-40 p-1;
+}
