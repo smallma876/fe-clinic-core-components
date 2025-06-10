@@ -1,6 +1,5 @@
 .storybook
 storybook-static
-index.html
 .vite/
 *.log
 *.md

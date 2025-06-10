@@ -3,7 +3,7 @@ import styles from './card.module.css';
 import { CardTypes } from './CardTypes.enum';
 import clsx from 'clsx';
 
-interface CardProps {
+export interface CardProps {
   children: React.ReactNode;
   type?: CardTypes;
 }

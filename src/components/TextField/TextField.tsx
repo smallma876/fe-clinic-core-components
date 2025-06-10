@@ -1,7 +1,7 @@
 import type { ErrorUIField } from '@/domain/error.interface';
 import { type ChangeEvent, type FC, type InputHTMLAttributes, useState } from 'react';
 
-interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
+export interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   id: string;
   error?: ErrorUIField;
   label?: string;

@@ -3,7 +3,7 @@ import document from "./../../svg/document.svg";
 import chevronRight from "./../../svg/chevron-right.svg";
 import styles from './CardMenu.module.css';
 
-interface CardMenuProps extends HTMLAttributes<HTMLButtonElement> {
+export interface CardMenuProps extends HTMLAttributes<HTMLButtonElement> {
   label: string;
 }
 

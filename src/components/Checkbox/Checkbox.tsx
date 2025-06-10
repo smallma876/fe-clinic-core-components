@@ -2,7 +2,7 @@
 import { type ChangeEvent, type FC, type InputHTMLAttributes, useState } from 'react';
 import type { ErrorUIField } from '@/domain/error.interface';
 
-interface CheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
+export interface CheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
   id: string;
   error?: ErrorUIField;
   label?: string;

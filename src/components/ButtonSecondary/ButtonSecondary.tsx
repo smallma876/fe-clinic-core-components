@@ -3,7 +3,7 @@ import type { FC } from "react";
 import styles from "./ButtonSecondary.module.css";
 import baseStyles  from "./../../shared/Button/button.module.css";
 
-interface ButtonSecondaryProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonSecondaryProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: string;
 }
 

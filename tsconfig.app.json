@@ -12,12 +12,14 @@
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
-    "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
       "@/*": ["src/*"],
     },
-
+    "declaration": true,
+    "declarationDir": "lib",
+    "emitDeclarationOnly": true,
+    "outDir": "lib",
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,

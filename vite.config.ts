@@ -7,8 +7,12 @@ import path from 'path';
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
+    emptyOutDir: false,
     lib: {
-      entry: path.resolve(__dirname, "src/index.ts"),
+      entry: [
+        path.resolve(__dirname, "src/components/ButtonPrimary"),
+        path.resolve(__dirname, "src/components/Secondary")
+      ],
       formats: ["es", 'cjs'],
       fileName:  (format) => `fe-clinic-components.${format}.js`,
     },

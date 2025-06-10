@@ -4,7 +4,7 @@ import baseStyles  from "./../../shared/Button/button.module.css";
 import clsx from "clsx";
 import ButtonSpinner from "../../shared/Button/Spinner";
 
-interface ButtonPrimaryProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonPrimaryProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: string;
   isLoading: boolean;
 }

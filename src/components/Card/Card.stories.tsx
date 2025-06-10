@@ -1,10 +1,11 @@
+import type { Meta } from "@storybook/react-vite";
 import Card from "./Card";
 import { CardTypes } from "./CardTypes.enum";
 
 const meta = {
     title: "Card",
     component: Card,
-}
+} satisfies Meta<typeof Card>
 
 export default meta;
 

@@ -1,7 +1,7 @@
 import type { ErrorUIField } from '@/domain/error.interface';
 import { type FC, type ReactNode, type SelectHTMLAttributes } from 'react';
 
-interface SelectorProps extends SelectHTMLAttributes<HTMLSelectElement> {
+export interface SelectorProps extends SelectHTMLAttributes<HTMLSelectElement> {
   children: ReactNode;
   value?: string;
   error?: ErrorUIField;

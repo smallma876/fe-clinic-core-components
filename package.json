@@ -1,7 +1,7 @@
 {
   "name": "fe-clinic-components",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "tsc": "tsc -b"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.8",
@@ -46,5 +47,10 @@
     "vite": "^6.3.5",
     "vitest": "^3.1.4"
   },
-  "files": []
+  "main": "./lib/fe-clinic-components.cjs.js",
+  "module": "./lib/fe-clinic-components.es.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ]
 }

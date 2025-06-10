@@ -1,10 +1,11 @@
+import type { Meta } from "@storybook/react-vite";
 import ButtonPrimary from "./ButtonPrimary"
 
 
 const meta = {
     title: 'ButtonPrimary',
     component: ButtonPrimary,
-}
+} satisfies Meta<typeof ButtonPrimary>
 
 export default meta;
 
