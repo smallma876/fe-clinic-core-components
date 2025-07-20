@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@reference "./../../index.css";
 
 .cardBase{
   @apply rounded-sm border-1 h-full p-1;

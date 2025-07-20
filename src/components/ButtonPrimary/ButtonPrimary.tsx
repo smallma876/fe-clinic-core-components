@@ -1,8 +1,8 @@
 import type { FC } from "react";
 import styles from "./ButtonPrimary.module.css";
-import baseStyles  from "./../../shared/Button/button.module.css";
+import baseStyles  from "./../Button/button.module.css";
 import clsx from "clsx";
-import ButtonSpinner from "../../shared/Button/Spinner";
+import ButtonSpinner from "../Spinner.tsx/Spinner";
 
 export interface ButtonPrimaryProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: string;
@@ -16,7 +16,7 @@ enum ButtonPrimaryState {
   Clicked = 'clicked'
 }
 
-const ButtonPrimary: FC<ButtonPrimaryProps> = ({ children, isLoading = false, disabled = false, ...rest }) => {
+export const ButtonPrimary: FC<ButtonPrimaryProps> = ({ children, isLoading = false, disabled = false, ...rest }) => {
   const getButtonState = () => {
     if(disabled){
       return ButtonPrimaryState.Disabled;
@@ -45,5 +45,3 @@ const ButtonPrimary: FC<ButtonPrimaryProps> = ({ children, isLoading = false, di
 
   );
 };
-
-export default ButtonPrimary;

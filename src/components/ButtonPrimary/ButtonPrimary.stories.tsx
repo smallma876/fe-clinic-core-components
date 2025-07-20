@@ -1,5 +1,5 @@
 import type { Meta } from "@storybook/react-vite";
-import ButtonPrimary from "./ButtonPrimary"
+import {ButtonPrimary} from "./ButtonPrimary"
 
 
 const meta = {

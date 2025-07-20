@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@reference "./../../index.css";
 
 .disabled {
     @apply bg-slate-400 text-white border-slate-400;
