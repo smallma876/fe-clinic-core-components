@@ -1,2 +1,1 @@
-import ButtonSecondary from "./ButtonSecondary";
-export default ButtonSecondary;
+export { ButtonSecondary } from "./ButtonSecondary";

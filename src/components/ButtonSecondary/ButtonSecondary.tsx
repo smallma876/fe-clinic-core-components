@@ -1,13 +1,13 @@
 import clsx from "clsx";
 import type { FC } from "react";
 import styles from "./ButtonSecondary.module.css";
-import baseStyles  from "./../Button/button.module.css";
+import baseStyles from "./../Button/button.module.css";
 
 export interface ButtonSecondaryProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: string;
 }
 
-const ButtonSecondary: FC<ButtonSecondaryProps> = (props) => {
+export const ButtonSecondary: FC<ButtonSecondaryProps> = (props) => {
   const { children, ...rest } = props;
 
   const className = clsx(
@@ -21,5 +21,3 @@ const ButtonSecondary: FC<ButtonSecondaryProps> = (props) => {
     </button>
   );
 };
-
-export default ButtonSecondary;

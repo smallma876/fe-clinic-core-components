@@ -1,25 +1,62 @@
+/* 
+Módulo: Es un archivo que tiene su propio ámbito local. 
+        Las variables, funciones y clases que se declaran en él no 
+        están disponibles globalmente a menos que se exporten explícitamente
+        y se importen en otro lugar. 
+        Los archivos son módulos si usan import o export de nivel superior.
+
+Script Global: Es un archivo que no tiene su propio ámbito local encapsulado. 
+        Las variables y funciones declaradas directamente en él se convierten 
+        en propiedades del objeto global (window en navegadores, global en Node.js). 
+        Esto se hacía comúnmente en JavaScript antiguo.
+*/
 {
   "compilerOptions": {
+    // incremental build: este archivo guarda información que es util para determinar
+    // en las siguientes compilaciones que archivos han cambiado y asi solo compilar eso
+    // mejora la velocidad del compilado al no compilar todo nuevamente.
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "ES2020",
     "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "module": "ESNext",
+    // si es true solo se verificaran los tipos de los archivos dentro de las carpetas
+    // que se están incluyendo(include)
+    // si es false verificará el tipo de todos los archivos.
     "skipLibCheck": true,
+    // especifica el directorio base a partir del cual se resolverán las rutas de módulos que no son relativas.
+    // sirve tanto en desarrollo como en compilación.
+    // ejm: el punto define que el base url será donde se encuentra el tsconfig en este caso fe-clinic-core-components
     "baseUrl": ".",
     /* Bundler mode */
+    // le dice a typescript que resuelva las importaciones lo más parecido a como
+    // lo haria un bundler. Si el bundler va generar la compilacion de todas 
+    // maneras es util porque sirve para la verificacion de tipos
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
+    // moduleDetection define como será tratado tu archivo como módulo o 
+    // script de ambito global en tiempo de compilación y desarrollo(verificación de tipos)
+    // - si es "force" todo lo tratará como modulo, así evita conflictos con vite
+    //   el cual trata todo como módulo
+    // - si es "auto" typescript lo tratará como modulo si tiene export/import y como
+    //   globalScript si no tiene ni uno de los 2.
     "moduleDetection": "force",
+    // compila los tag de react en funciones javascript
+    // también evita que se tenga que importar React haciendolo más liviano
     "jsx": "react-jsx",
     "paths": {
-      "@/*": ["src/*"],
+      "@/*": [
+        "src/*"
+      ],
     },
     "declaration": true,
-    "declarationDir": "lib",
+    "declarationDir": "lib/types",
     "emitDeclarationOnly": true,
-    "outDir": "lib",
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
@@ -27,5 +64,10 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"],
+  "include": [
+    "src",
+  ],
+  "exclude": [
+    "src/stories"
+  ]
 }

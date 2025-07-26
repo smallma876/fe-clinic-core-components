@@ -1,5 +1,5 @@
 import type { Meta } from "@storybook/react-vite";
-import ButtonSecondary from "./ButtonSecondary";
+import { ButtonSecondary } from "./ButtonSecondary";
 
 const meta = {
     title: "ButtonSecondary",

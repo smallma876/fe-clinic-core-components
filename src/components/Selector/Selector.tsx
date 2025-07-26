@@ -8,7 +8,7 @@ export interface SelectorProps extends SelectHTMLAttributes<HTMLSelectElement> {
   label?: string;
 }
 
-const Selector: FC<SelectorProps> = ({ label, id, value, children, error, ...rest }) => {
+export const Selector: FC<SelectorProps> = ({ label, id, value, children, error, ...rest }) => {
   return (
     <div className="flex flex-col w-full">
       <label htmlFor={id}>{label}</label>
@@ -24,5 +24,3 @@ const Selector: FC<SelectorProps> = ({ label, id, value, children, error, ...res
     </div>
   );
 };
-
-export default Selector;
