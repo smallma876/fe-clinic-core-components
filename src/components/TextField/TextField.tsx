@@ -9,7 +9,7 @@ export interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   defaultValue?: string;
 }
 
-const TextField: FC<TextFieldProps> = ({
+export const TextField: FC<TextFieldProps> = ({
   label,
   id,
   value,
@@ -46,4 +46,3 @@ const TextField: FC<TextFieldProps> = ({
   );
 };
 
-export default TextField;

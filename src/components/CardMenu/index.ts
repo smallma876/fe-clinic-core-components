@@ -1,2 +1,1 @@
-import CardMenu from "./CardMenu";
-export default CardMenu;
+export * from "./CardMenu"

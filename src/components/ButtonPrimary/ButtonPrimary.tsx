@@ -1,8 +1,8 @@
 import type { FC } from "react";
 import styles from "./ButtonPrimary.module.css";
-import baseStyles  from "./../Button/button.module.css";
+import baseStyles from "./../Button/button.module.css";
 import clsx from "clsx";
-import ButtonSpinner from "../Spinner.tsx/Spinner";
+import { ButtonSpinner } from "../Spinner/Spinner";
 
 export interface ButtonPrimaryProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: string;
@@ -18,10 +18,10 @@ enum ButtonPrimaryState {
 
 export const ButtonPrimary: FC<ButtonPrimaryProps> = ({ children, isLoading = false, disabled = false, ...rest }) => {
   const getButtonState = () => {
-    if(disabled){
+    if (disabled) {
       return ButtonPrimaryState.Disabled;
     }
-    if(isLoading){
+    if (isLoading) {
       return ButtonPrimaryState.Loading;
     }
     return ButtonPrimaryState.Neutral;
@@ -38,9 +38,9 @@ export const ButtonPrimary: FC<ButtonPrimaryProps> = ({ children, isLoading = fa
       {isLoading ? <div className="flex justify-center items-center">
 
         <ButtonSpinner />
-   
-        </div>: children}
-      
+
+      </div> : children}
+
     </button>
 
   );

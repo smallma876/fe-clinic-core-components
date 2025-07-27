@@ -1,4 +1,4 @@
-import TextField from "./TextField";
+import { TextField } from "./TextField";
 
 const meta = {
     title: "TextField",
@@ -11,5 +11,5 @@ export const Base = {
     args: {
         id: "TextField",
         label: "Ingresa un texto",
-    } 
+    }
 }

@@ -9,7 +9,7 @@ export interface CheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
   checked?: boolean;
 }
 
-const Checkbox: FC<CheckboxProps> = ({ label, id, onChange, checked, ...rest }) => {
+export const Checkbox: FC<CheckboxProps> = ({ label, id, onChange, checked, ...rest }) => {
   const isControlled = checked !== undefined;
 
   const [internalChecked, setInternalChecked] = useState<boolean>(false);
@@ -52,5 +52,3 @@ const Checkbox: FC<CheckboxProps> = ({ label, id, onChange, checked, ...rest }) 
     </label>
   );
 };
-
-export default Checkbox;

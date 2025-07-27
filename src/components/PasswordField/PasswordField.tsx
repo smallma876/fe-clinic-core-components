@@ -9,7 +9,7 @@ export interface PasswordFieldProps extends InputHTMLAttributes<HTMLInputElement
   defaultValue?: string;
 }
 
-const PasswordField: FC<PasswordFieldProps> = ({
+export const PasswordField: FC<PasswordFieldProps> = ({
   label,
   id,
   value,
@@ -44,4 +44,3 @@ const PasswordField: FC<PasswordFieldProps> = ({
   );
 };
 
-export default PasswordField;

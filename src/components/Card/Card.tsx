@@ -8,10 +8,9 @@ export interface CardProps {
   type?: CardTypes;
 }
 
-const Card: FC<CardProps> = ({ children, type = CardTypes.Primary }) => {
-  const className =  clsx(styles.cardBase, styles[type])
+export const Card: FC<CardProps> = ({ children, type = CardTypes.Primary }) => {
+  const className = clsx(styles.cardBase, styles[type])
 
   return <div className={className}>{children}</div>;
 };
 
-export default Card;

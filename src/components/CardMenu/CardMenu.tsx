@@ -7,7 +7,7 @@ export interface CardMenuProps extends HTMLAttributes<HTMLButtonElement> {
   label: string;
 }
 
-const CardMenu: FC<CardMenuProps> = (props) => {
+export const CardMenu: FC<CardMenuProps> = (props) => {
   const { label, ...rest } = props;
 
   return (
@@ -18,5 +18,3 @@ const CardMenu: FC<CardMenuProps> = (props) => {
     </button>
   );
 };
-
-export default CardMenu;

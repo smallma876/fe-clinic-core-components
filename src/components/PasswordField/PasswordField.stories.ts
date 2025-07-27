@@ -1,4 +1,4 @@
-import PasswordField from "./PasswordField";
+import { PasswordField } from "./PasswordField";
 
 const meta = {
     title: "PasswordField",
@@ -8,16 +8,16 @@ const meta = {
 export default meta;
 
 export const Base = {
-    args : {
-        id:"Password",
-        label:"Ingresa password",
+    args: {
+        id: "Password",
+        label: "Ingresa password",
     }
 }
 
 export const Error = {
-    args : {
-        id:"Password",
-        label:"Ingresa password",
+    args: {
+        id: "Password",
+        label: "Ingresa password",
         error: {
             message: "Es un error"
         }

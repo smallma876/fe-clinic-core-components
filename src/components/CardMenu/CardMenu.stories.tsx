@@ -1,10 +1,10 @@
 import type { Meta } from "@storybook/react-vite";
-import CardMenu from "./CardMenu";
+import { CardMenu } from "./CardMenu";
 
 const meta = {
     title: "CardMenu",
     component: CardMenu,
-}satisfies Meta<typeof CardMenu>
+} satisfies Meta<typeof CardMenu>
 
 export default meta;
 

@@ -1,11 +1,9 @@
 import { type FC, type PropsWithChildren } from 'react'
 
-const Margin:FC<PropsWithChildren> = ({ children }) => {  
+export const Margin: FC<PropsWithChildren> = ({ children }) => {
   return (
     <div className=''>
-        {children}
+      {children}
     </div>
   )
 }
-
-export default Margin
