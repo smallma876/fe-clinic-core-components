@@ -10,7 +10,7 @@ export interface ButtonLinkProps extends ButtonHTMLAttributes<HTMLButtonElement>
 }
 
 export const ButtonLink: FC<ButtonLinkProps> = ({
-    children,   
+    children,
     className: additionalClassName = '', // To allow additional classes from the parent
     ...rest
 }) => {
@@ -30,12 +30,14 @@ export const ButtonLink: FC<ButtonLinkProps> = ({
     );
 
     return (
-        <button
-            type="button" // Set type to "button" to prevent default form submission
-            className={linkClasses}
-            {...rest} // Passes any other HTML properties to the button (onClick, disabled, etc.)
-        >
-            {children}
-        </button>
+        <div className="mb-8">
+            <button
+                type="button" // Set type to "button" to prevent default form submission
+                className={linkClasses}
+                {...rest} // Passes any other HTML properties to the button (onClick, disabled, etc.)
+            >
+                {children}
+            </button>
+        </div>
     );
 };

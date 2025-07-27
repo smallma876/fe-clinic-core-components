@@ -49,22 +49,22 @@ export const ButtonPrimary: FC<ButtonPrimaryProps> = ({
   );
 
   return (
-
-    <button
-      className={buttonClasses}
-      type="button" // Tipo de botón por defecto
-      disabled={disabled || isLoading} // Deshabilita el botón si está cargando o deshabilitado
-      {...rest} // Pasa cualquier otra propiedad HTML al botón (onClick, etc.)
-    >
-      {/* Muestra el spinner si está cargando, de lo contrario muestra el contenido del botón */}
-      {isLoading ? (
-        <div className="flex justify-center items-center">
-          <ButtonSpinner />
-        </div>
-      ) : (
-        children
-      )}
-    </button>
-
+    <div className="flex flex-col w-full mb-8">
+      <button
+        className={buttonClasses}
+        type="button" // Tipo de botón por defecto
+        disabled={disabled || isLoading} // Deshabilita el botón si está cargando o deshabilitado
+        {...rest} // Pasa cualquier otra propiedad HTML al botón (onClick, etc.)
+      >
+        {/* Muestra el spinner si está cargando, de lo contrario muestra el contenido del botón */}
+        {isLoading ? (
+          <div className="flex justify-center items-center">
+            <ButtonSpinner />
+          </div>
+        ) : (
+          children
+        )}
+      </button>
+    </div>
   );
 };

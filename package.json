@@ -1,7 +1,7 @@
 {
   "name": "@sergio.mallma/fe-clinic-components",
   "private": false,
-  "version": "1.0.9",
+  "version": "1.0.10",
   "type": "module",
   "types": "lib/types/index.d.ts",
   "description": "Test library",

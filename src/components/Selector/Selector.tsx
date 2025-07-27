@@ -39,7 +39,7 @@ export const Selector: FC<SelectorProps> = ({ icon, label, id, value, children, 
   );
 
   return (
-    <div className="flex flex-col w-full mb-4">
+    <div className="flex flex-col w-full mb-8">
       {label && (
         <label htmlFor={id} className="text-gray-700 text-sm font-medium mb-1">
           {label}

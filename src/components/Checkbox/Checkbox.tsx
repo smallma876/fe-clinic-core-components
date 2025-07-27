@@ -59,7 +59,7 @@ export const Checkbox: FC<CheckboxProps> = ({
   );
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mb-8">
       <label
         htmlFor={id}
         className={`flex items-center space-x-3 ${disabled ? 'cursor-not-allowed' : 'cursor-pointer'

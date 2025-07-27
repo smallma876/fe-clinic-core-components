@@ -68,7 +68,7 @@ export const PasswordField: FC<PasswordFieldProps> = ({
 
   return (
     // Contenedor principal del campo de texto
-    <div className="flex flex-col w-full mb-4">
+    <div className="flex flex-col w-full mb-8">
       {/* Etiqueta del campo de texto, solo se muestra si existe */}
       {label && (
         <label htmlFor={id} className="text-gray-700 text-sm font-medium mb-1">
