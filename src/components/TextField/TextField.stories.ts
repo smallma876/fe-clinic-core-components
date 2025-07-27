@@ -11,5 +11,6 @@ export const Base = {
     args: {
         id: "TextField",
         label: "Ingresa un texto",
+        placeholder: "Escribe aquí"
     }
 }
