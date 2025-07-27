@@ -26,7 +26,7 @@ export default defineConfig({
     },
     rollupOptions: {
       // estos módulos no se empaquetan y lo debe implementar el consumer
-      external: ["react", "react-dom", 'react/jsx-runtime'],
+      external: ["react", "react-dom", 'react/jsx-runtime', "tailwindcss"],
       output: {
         //cuando es true mantiene la estructura de carpetas y cada ts con su respectivo js, sin agruparlo en un solo archivo.
         preserveModules: true,
