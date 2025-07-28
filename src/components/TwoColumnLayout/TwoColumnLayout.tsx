@@ -23,7 +23,7 @@ export const TwoColumnLayout: FC<TwoColumnLayoutProps> = ({
         // flex-col para que sean columnas (apiladas) en pantallas pequeñas (móviles)
         // h-screen para ocupar toda la altura de la pantalla
         // items-center y justify-center para centrar el contenido
-        <div className={clsx("flex flex-col md:flex-row h-screen w-full items-center justify-center bg-gray-100 max-w-[1366px]", containerClassName)}>
+        <div className={clsx("flex flex-col md:flex-row h-full w-full items-center justify-center bg-gray-100 max-w-[1366px]", containerClassName)}>
 
             {/* Lado Izquierdo: Formulario */}
             {/* En pantallas medianas y grandes, ocupa la mitad del ancho (md:w-1/2) */}
