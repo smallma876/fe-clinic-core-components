@@ -15,7 +15,7 @@ export interface CardProps {
 
 export const Card: FC<CardProps> = ({ children, type = CardTypes.Primary, className = '' }) => {
   // Clases base para la tarjeta
-  const baseCardClasses = "bg-white rounded-lg shadow-lg p-8"; // Fondo blanco, bordes redondeados, sombra y padding
+  const baseCardClasses = "bg-white rounded-lg shadow-lg p-8 w-full"; // Fondo blanco, bordes redondeados, sombra y padding
 
   // Clases específicas para cada tipo de tarjeta (puedes personalizarlas)
   const typeClasses = {
