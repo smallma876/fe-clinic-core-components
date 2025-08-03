@@ -4,6 +4,7 @@ import clsx from 'clsx';
 // Definimos los tipos de tarjeta (puedes expandirlos si necesitas más estilos)
 export enum CardTypes {
   Primary = 'primary',
+  Secondary = 'secondary'
   // Puedes añadir más tipos como 'Secondary', 'Elevated', etc.
 }
 
@@ -20,7 +21,7 @@ export const Card: FC<CardProps> = ({ children, type = CardTypes.Primary, classN
   // Clases específicas para cada tipo de tarjeta (puedes personalizarlas)
   const typeClasses = {
     [CardTypes.Primary]: "border border-gray-200", // Borde sutil para el tipo primario
-    // [CardTypes.Secondary]: "bg-gray-50", // Ejemplo de otro tipo
+    [CardTypes.Secondary]: "bg-gray-50", // Ejemplo de otro tipo
   };
 
   const combinedClasses = clsx(

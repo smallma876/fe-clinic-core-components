@@ -10,3 +10,4 @@ export * from "./Spinner";
 export * from "./TextField";
 export * from "./ButtonLink";
 export * from "./TwoColumnLayout";
+export * from "./ErrorPage";

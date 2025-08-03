@@ -1,6 +1,5 @@
 import type { Meta } from "@storybook/react-vite";
-import { Card } from "./Card";
-import { CardTypes } from "./CardTypes.enum";
+import { Card, CardTypes } from "./Card";
 
 const meta = {
     title: "Card",
